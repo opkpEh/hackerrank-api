@@ -34,10 +34,12 @@ def scrape_hackerrank_profile(username):
     except requests.exceptions.RequestException as e:
         return {"error": str(e)}
 
+@app.route('/')
+def home():
+    return "HackerRank Profile Scraper API"
+
 @app.route('/profile/<username>')
 def get_profile(username):
     badges = scrape_hackerrank_profile(username)
     return jsonify(badges)
 
-if __name__ == '__main__':
-    app.run(debug=True)
