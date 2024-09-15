@@ -6,3 +6,5 @@ usage:
 
 endpoint: 
 /profile/{username}
+
+hackerrank-star-scraper.vercel.app
