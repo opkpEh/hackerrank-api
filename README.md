@@ -1,5 +1,7 @@
-# hackerrank_star_scraper
-to scrape out stars on a user profile per topic
+# hackerrank api
+
+this api return all of the stars that the user has earned 
+and all of the certificates that the user has earned.
 
 
 usage: 
